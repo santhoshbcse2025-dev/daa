@@ -1,0 +1,16 @@
+def linear_search(arr, target):
+    for i, val in enumerate(arr):
+        if val == target:
+            return i
+    return -1
+
+# Example
+arr = [10, 25, 3, 47, 8, 99]
+target = 47
+
+result = linear_search(arr, target)
+
+if result != -1:
+    print(f"Element {target} found at index {result}")
+else:
+    print(f"Element {target} not found")
